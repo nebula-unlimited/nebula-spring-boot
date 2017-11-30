@@ -11,6 +11,7 @@
     <modules>
         <module>Spring-Boot-Hello</module>
         <module>Spring-Boot-Redis</module>
+        <module>Spring-Boot-Mail</module>
     </modules>
 
     <parent>
@@ -34,6 +35,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
     </dependencies>
 
