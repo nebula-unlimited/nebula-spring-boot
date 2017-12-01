@@ -1,14 +1,18 @@
 package com.nebula.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.Resource;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 
 import javax.mail.internet.MimeMessage;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.InputStreamReader;
 
 @Component
 public class MailUtil {
@@ -89,8 +93,11 @@ public class MailUtil {
         //第二个参数指定发送的是HTML格式,同时cid:是固定的写法
         helper.setText(content, true);
 
-        FileSystemResource file = new FileSystemResource(new File("/home/cloud/project/Nebula-Spring-Boot/Spring-Boot-Mail/target/classes/static/image/nebula.jpg"));
-        helper.addInline("picture", file);
+        ///FileSystemResource file = new FileSystemResource(new File("/home/cloud/project/Nebula-Spring-Boot/Spring-Boot-Mail/target/classes/static/image/nebula.jpg"));
+        ///helper.addInline("picture", file);
+
+        Resource resource = new ClassPathResource("static/image/nebula.jpg");
+        helper.addInline("picture", resource);
         mailSender.send(mimeMessage);
     }
 
