@@ -10,9 +10,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 
 import javax.mail.internet.MimeMessage;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.InputStreamReader;
 
 @Component
 public class MailUtil {
