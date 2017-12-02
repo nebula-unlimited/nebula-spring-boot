@@ -7,6 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 首页控制器
+ *
+ * @author Nebula Unlimited
+ */
+
 @RestController
 public class IndexController {
     @Autowired

@@ -12,6 +12,12 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 首页控制器
+ *
+ * @author Nebula Unlimited
+ */
+
 @RestController
 public class IndexController {
     @Autowired

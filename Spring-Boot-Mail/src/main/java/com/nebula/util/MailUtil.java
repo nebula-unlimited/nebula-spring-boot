@@ -12,6 +12,12 @@ import org.springframework.stereotype.Component;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
 
+/**
+ * Spring Boot 邮件工具类
+ *
+ * @author Nebula Unlimited
+ */
+
 @Component
 public class MailUtil {
     @Autowired
