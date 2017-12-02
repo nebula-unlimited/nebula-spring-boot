@@ -12,6 +12,7 @@
         <module>Spring-Boot-Hello</module>
         <module>Spring-Boot-Redis</module>
         <module>Spring-Boot-Mail</module>
+        <module>Spring-Boot-Scheduler</module>
     </modules>
 
     <parent>
