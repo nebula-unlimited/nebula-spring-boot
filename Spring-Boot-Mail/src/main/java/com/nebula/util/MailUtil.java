@@ -25,7 +25,7 @@ public class MailUtil {
      * @param content 邮件内容
      * @throws Exception
      */
-    public void sendSimpleMail(String from, String to, String subject, String content) throws Exception {
+    public void sendSimpleMail(String from, String to, String subject, String content) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);
         message.setTo(to);
