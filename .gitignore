@@ -15,4 +15,4 @@ target/
 
 # Idea #
 .idea/
-.iml
+*.iml
