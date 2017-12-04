@@ -8,6 +8,8 @@ Spring-Boot-Redis: Redis 项目
 
 Spring-Boot-Scheduler: 定时任务项目
 
+Spring-Boot-Spring-Security: 使用 Spring Security 进行简单安全控制
+
 ### Reference Project
 https://github.com/ityouknow/spring-boot-examples
 
