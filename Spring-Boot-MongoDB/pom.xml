@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Spring-Boot-Spring-Security</artifactId>
+    <artifactId>Spring-Boot-MongoDB</artifactId>
 
-    <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-security</artifactId>
-            </dependency>
-    </dependencies>
 
 </project>
