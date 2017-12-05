@@ -15,6 +15,7 @@
         <module>Spring-Boot-Scheduler</module>
         <module>Spring-Boot-Spring-Security</module>
         <module>Spring-Boot-MongoDB</module>
+        <module>Spring-Boot-FreeMarker</module>
     </modules>
 
     <parent>
