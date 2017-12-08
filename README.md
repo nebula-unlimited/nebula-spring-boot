@@ -6,6 +6,10 @@ Spring-Boot-Hello: Hello World 项目
 
 Spring-Boot-Mail: JavaMailSender 发送邮件项目
 
+Spring-Boot-MongoDB: MongoDB 项目
+
+Spring-Boot-MyBatis: MyBatis 项目
+
 Spring-Boot-Redis: Redis 项目
 
 Spring-Boot-Scheduler: 定时任务项目
