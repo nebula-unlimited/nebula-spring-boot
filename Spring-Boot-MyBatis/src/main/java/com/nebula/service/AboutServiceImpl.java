@@ -1,5 +1,6 @@
 package com.nebula.service;
 
+import com.github.pagehelper.PageHelper;
 import com.nebula.domain.About;
 import com.nebula.domain.AboutMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,10 @@ public class AboutServiceImpl implements AboutService {
     private AboutMapper aboutMapper;
 
     @Override
-    public List<About> findAll() {
+    public List<About> findAll(About about) {
+        if (about.getPage() != null && about.getRows() != null) {
+            PageHelper.startPage(about.getPage(), about.getRows());
+        }
         return aboutMapper.findAll();
     }
 

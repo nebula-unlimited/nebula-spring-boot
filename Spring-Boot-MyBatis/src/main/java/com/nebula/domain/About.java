@@ -8,7 +8,7 @@ import java.sql.Timestamp;
  * @author Nebula Unlimited
  */
 
-public class About {
+public class About extends BaseEntity {
     private Long id;
 
     private Timestamp createTime;

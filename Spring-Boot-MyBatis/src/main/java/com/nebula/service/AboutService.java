@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface AboutService {
 
-    List<About> findAll();
+    List<About> findAll(About about);
 
     About findOne(int id);
 
