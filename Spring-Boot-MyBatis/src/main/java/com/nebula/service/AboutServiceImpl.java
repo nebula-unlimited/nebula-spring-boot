@@ -28,6 +28,12 @@ public class AboutServiceImpl implements AboutService {
     }
 
     @Override
+    public List<About> findPage(int page, int size) {
+        PageHelper.startPage(page, size);
+        return aboutMapper.findAll();
+    }
+
+    @Override
     public About findOne(int id) {
         return aboutMapper.findOne(id);
     }

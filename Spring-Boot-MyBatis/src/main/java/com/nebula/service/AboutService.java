@@ -14,6 +14,8 @@ public interface AboutService {
 
     List<About> findAll(About about);
 
+    List<About> findPage(int page, int size);
+
     About findOne(int id);
 
     About findByName(String name);

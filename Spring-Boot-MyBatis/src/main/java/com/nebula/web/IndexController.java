@@ -55,6 +55,11 @@ public class IndexController {
         return new PageInfo<About>(aboutList);
     }
 
+    @RequestMapping("/about2")
+    public List<About> about2() {
+        return aboutService.findPage(1, 5);
+    }
+
     /**
      * 删除记录
      * @param id
