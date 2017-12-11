@@ -17,6 +17,7 @@
         <module>Spring-Boot-MongoDB</module>
         <module>Spring-Boot-FreeMarker</module>
         <module>Spring-Boot-MyBatis</module>
+        <module>Spring-Boot-Spring-Data-JPA</module>
     </modules>
 
     <parent>
@@ -35,6 +36,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <dependency>
