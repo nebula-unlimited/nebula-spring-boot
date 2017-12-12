@@ -18,6 +18,7 @@
         <module>Spring-Boot-FreeMarker</module>
         <module>Spring-Boot-MyBatis</module>
         <module>Spring-Boot-Spring-Data-JPA</module>
+        <module>Spring-Boot-JdbcTemplate</module>
     </modules>
 
     <parent>

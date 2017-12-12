@@ -4,6 +4,8 @@ Spring-Boot-FreeMarker: FreeMarker 模板引擎
 
 Spring-Boot-Hello: Hello World 项目
 
+Spring-Boot-JdbcTemplate: JdbcTemplate 项目
+
 Spring-Boot-Mail: JavaMailSender 发送邮件项目
 
 Spring-Boot-MongoDB: MongoDB 项目
