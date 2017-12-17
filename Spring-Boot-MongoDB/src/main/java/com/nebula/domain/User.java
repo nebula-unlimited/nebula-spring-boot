@@ -2,6 +2,12 @@ package com.nebula.domain;
 
 import org.springframework.data.annotation.Id;
 
+/**
+ * User 实体类
+ *
+ * @author Nebula Unlimited
+ */
+
 public class User {
     @Id
     private Long id;

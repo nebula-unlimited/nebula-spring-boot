@@ -5,6 +5,12 @@ import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * About 数据库映射器
+ *
+ * @author Nebula Unlimited
+ */
+
 public class AboutRowMapper implements RowMapper<About> {
     @Override
     public About mapRow(ResultSet resultSet, int i) throws SQLException {

@@ -31,6 +31,10 @@ public interface AboutMapper {
      *
      */
 
+    /**
+     * 查找全部记录
+     * @return
+     */
     @Select("SELECT * FROM nebula_about")
     @Results({
             @Result(property = "createTime", column = "create_time"),
@@ -40,6 +44,11 @@ public interface AboutMapper {
     })
     List<About> findAll();
 
+    /**
+     * 查找一条记录
+     * @param id
+     * @return
+     */
     @Select("SELECT * FROM nebula_about WHERE id = #{id}")
     @Results({
             @Result(property = "createTime", column = "create_time"),
@@ -49,6 +58,11 @@ public interface AboutMapper {
     })
     About findOne(@Param("id") Integer id);
 
+    /**
+     * 根据名称查找记录
+     * @param name
+     * @return
+     */
     @Select("SELECT * FROM nebula_about WHERE name = #{name}")
     @Results({
             @Result(property = "createTime", column = "create_time"),
@@ -68,13 +82,30 @@ public interface AboutMapper {
      @Delete("DELETE FROM users WHERE id =#{id}")
      void delete(Long id);
      */
+
+    /**
+     * 创建
+     * @param name
+     * @param content
+     * @return
+     */
     @Insert("INSERT INTO `nebula_about` (`name`, `content`) VALUES ('${name}', '${content}')")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     Long insert(@Param("name") String name, @Param("content") String content);
 
+    /**
+     * 更新
+     * @param about
+     * @return
+     */
     @Update("UPDATE `nebula_about` SET `name` = '${name}', `content` = '${content}' WHERE `id` = #{id}")
     int update(About about);
 
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
     @Delete("DELETE FROM `nebula_about` WHERE `id` = #{id}")
     int delete(Long id);
 }

@@ -1,6 +1,12 @@
 package com.nebula.domain;
 
-import org.springframework.data.annotation.Transient;
+import javax.persistence.Transient;
+
+/**
+ * Base 基础实体类
+ *
+ * @author Nebula Unlimited
+ */
 
 public class BaseEntity {
     @Transient
