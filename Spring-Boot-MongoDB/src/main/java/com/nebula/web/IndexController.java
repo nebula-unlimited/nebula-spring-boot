@@ -26,7 +26,7 @@ public class IndexController {
         System.out.println(userRepository.findAll().size());
 
         // 删除一个 User 输出 User 总数
-        User user = userRepository.findOne(2L);
+        User user = userRepository.findById(2L).get();
         userRepository.delete(user);
         System.out.println(userRepository.findAll().size());
 

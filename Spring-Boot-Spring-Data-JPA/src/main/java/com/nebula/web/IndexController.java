@@ -39,7 +39,7 @@ public class IndexController {
 
         System.out.println(aboutRepository.updateStatus(6L, 1));
 
-        About about = aboutRepository.findOne(6L);
+        About about = aboutRepository.findById(6L).get();
         System.out.println(about);
 
         about.setName("asdf");
@@ -65,7 +65,7 @@ public class IndexController {
 
     @RequestMapping("/delete/{id}")
     public String delete(@PathVariable("id") Long id) {
-        aboutRepository.delete(id);
+        aboutRepository.deleteById(id);
         return "ok";
     }
 
@@ -90,7 +90,7 @@ public class IndexController {
 
     @RequestMapping("/about/{id}")
     public String aboutDetail(@PathVariable("id") Long id) {
-        System.out.println(aboutRepository.findOne(id));
-        return aboutRepository.findOne(id).toString();
+        System.out.println(aboutRepository.findById(id).get());
+        return aboutRepository.findById(id).get().toString();
     }
 }
